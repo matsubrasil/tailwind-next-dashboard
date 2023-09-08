@@ -1,6 +1,7 @@
 import * as FileInput from '@/components/Form/FileInput'
 import { Select } from '@/components/Form/Select'
 import { SelectItem } from '@/components/Form/Select/SelectItem'
+import { Textarea } from '@/components/Form/Textarea'
 import * as Input from '@/components/Input'
 import { SettingsTabs } from '@/components/SettingsTabs'
 import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
@@ -202,7 +203,10 @@ export default function Home() {
                   </button>
                 </div>
               </div>
-              <div></div>
+              <Textarea
+                id="bio"
+                defaultValue="I'm a product Designer based in Melbourne, Australia. I specialised in UX/UI design, brand strategy, and Webflow development."
+              />
             </div>
           </div>
 
