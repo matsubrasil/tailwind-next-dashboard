@@ -1,3 +1,4 @@
+import { Button } from '@/components/Button'
 import * as FileInput from '@/components/Form/FileInput'
 import { Select } from '@/components/Form/Select'
 import { SelectItem } from '@/components/Form/Select/SelectItem'
@@ -25,19 +26,12 @@ export default function Home() {
             </span>
           </div>
           <div className="flex-center flex gap-2">
-            <button
-              type="button"
-              className="rounded-lg border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-50"
-            >
+            <Button type="button" variant="outline">
               Cancel
-            </button>
-            <button
-              type="submit"
-              form="settings"
-              className="hover:bg-violet-700S rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm"
-            >
+            </Button>
+            <Button type="submit" form="settings" variant="primary">
               Save
-            </button>
+            </Button>
           </div>
         </div>
 
@@ -230,18 +224,12 @@ export default function Home() {
 
           {/* Última linha - rodapé */}
           <div className="flex items-center justify-end gap-2 pt-5">
-            <button
-              type="button"
-              className="rounded-lg border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-50"
-            >
+            <Button type="button" variant="outline">
               Cancel
-            </button>
-            <button
-              type="submit"
-              className="hover:bg-violet-700S rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm"
-            >
+            </Button>
+            <Button type="submit" variant="primary">
               Save
-            </button>
+            </Button>
           </div>
 
           {/* fim */}
