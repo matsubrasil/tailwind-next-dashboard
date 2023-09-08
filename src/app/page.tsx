@@ -1,8 +1,8 @@
-import { ChevronDown, Mail } from 'lucide-react'
-import { SettingsTabs } from '@/components/SettingsTabs'
-import * as Input from '@/components/Input'
 import * as FileInput from '@/components/Form/FileInput'
-import * as Select from '@radix-ui/react-select'
+import { Select } from '@/components/Form/Select'
+import * as Input from '@/components/Input'
+import { SettingsTabs } from '@/components/SettingsTabs'
+import { Mail } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -119,14 +119,7 @@ export default function Home() {
             >
               Country
             </label>
-            <Select.Root>
-              <Select.Trigger className="flex h-11 w-full items-center justify-between gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm">
-                <Select.Value className="text-black" />
-                <Select.Icon>
-                  <ChevronDown className="h-5 w-5 text-zinc-500" />
-                </Select.Icon>
-              </Select.Trigger>
-            </Select.Root>
+            <Select />
           </div>
 
           {/* Linha do Timezone */}
