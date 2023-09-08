@@ -1,5 +1,6 @@
 import * as FileInput from '@/components/Form/FileInput'
 import { Select } from '@/components/Form/Select'
+import { SelectItem } from '@/components/Form/Select/SelectItem'
 import * as Input from '@/components/Input'
 import { SettingsTabs } from '@/components/SettingsTabs'
 import { Mail } from 'lucide-react'
@@ -119,7 +120,12 @@ export default function Home() {
             >
               Country
             </label>
-            <Select />
+            <Select placeholder="Select a country...">
+              <SelectItem value="br" text="Brazil" />
+              <SelectItem value="de" text="Germany" />
+              <SelectItem value="es" text="Spain" />
+              <SelectItem value="us" text="United States" />
+            </Select>
           </div>
 
           {/* Linha do Timezone */}
@@ -130,7 +136,13 @@ export default function Home() {
             >
               Timezone
             </label>
-            <div></div>
+            <Select placeholder="Select a timezone...">
+              <SelectItem value="brt" text="Brasília Time (UTC-03:00)" />
+              <SelectItem
+                value="pst"
+                text="Pacific Standard Time (UTC-08:00)"
+              />
+            </Select>
           </div>
 
           {/* Linha do Bio */}
