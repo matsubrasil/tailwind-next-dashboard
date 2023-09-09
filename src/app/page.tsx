@@ -11,6 +11,8 @@ export default function Home() {
   return (
     <>
       <h1 className="text-3xl font-medium text-zinc-900">Settings</h1>
+
+      {/* Tabs */}
       <SettingsTabs />
 
       <section className="mt-6 flex flex-col ">
